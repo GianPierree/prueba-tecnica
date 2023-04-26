@@ -27,6 +27,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "redis": "^4.6.5",
     "uuid": "^9.0.0"
   }
 }
