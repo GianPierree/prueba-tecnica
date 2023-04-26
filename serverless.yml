@@ -1,0 +1,22 @@
+service: token
+
+useDotenv: true
+
+provider: 
+  name: aws
+  runtime: nodejs16.x
+
+functions:
+  token:
+    handler: src/token.handler
+    events: 
+      - httpApi: POST /token
+
+custom:
+  esbuild:
+    bundle: true
+    minify: true
+
+plugins: 
+  - serverless-offline
+  - serverless-esbuild
