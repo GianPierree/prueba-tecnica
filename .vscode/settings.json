@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "token",
         "jest",
-        "redis"
+        "redis",
+        "readme"
     ]
 }
