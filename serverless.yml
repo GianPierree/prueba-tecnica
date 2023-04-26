@@ -7,11 +7,15 @@ provider:
   runtime: nodejs16.x
 
 functions:
-  token:
+  tokens:
     handler: src/tokens.handler
     events: 
       - httpApi: POST /tokens
-
+  token:
+    handler: src/token.handler
+    events: 
+      - httpApi: POST /token
+        
 custom:
   esbuild:
     bundle: true
